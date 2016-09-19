@@ -3,4 +3,4 @@ This repo holds the front end for the NB Gardens project, which is coded in Pyth
 
 
 <div>NBGardensFrontEnd Site Map:</div>
-<div><img src="https://raw.githubusercontent.com/t87912/NBGardensFrontEnd/master/NBGardensFrontEndSiteMap.png" /></div>
+<div><img src="https://raw.githubusercontent.com/t87912/NBGardensFrontEnd/master/resources/NBGardensFrontEndSiteMap.png" /></div>
