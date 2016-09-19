@@ -1,7 +1,7 @@
 body{
 	font-family: monospace;
 	font-size: 10pt;
-	background-color: F4F4F4;
+	background-color: #F4F4F4;
 	position: center;
 	margin-top: 2%;
     width: 100%;
@@ -26,9 +26,18 @@ ul {
 
 .breadcrumb {
 	width: 80%;
-	margin-top: 1%;
+	margin-top: 1.5%;
 	margin-left: 10%;
 	margin-right: 10%;
+	color: black;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 li {
