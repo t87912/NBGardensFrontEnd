@@ -7,12 +7,58 @@ body{
     width: 100%;
 }
 
+.bodyText {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	line-height: 200%;
+}
+ 
+.nav li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+.nav li a {
+    font-size: 12px;
+    color: white;
+    display: block;
+    line-height: 60px;
+    padding: 0 26px;
+    text-decoration: none;
+    border-left: 1px solid #2e2e2e;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.nav li a:hover {
+    background-color: #2e2e2e;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.popularProducts {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.searchBar {
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -64,4 +110,47 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #4CAF50;
+}
+
+#search {
+    width: 100%;
+}
+#search_text{
+    width: 90%;
+	padding-left: 20px;
+    font-size: 12pt;
+    border: 0 none;
+    height: 52px;
+    margin-right: 0;
+    color: white;
+    outline: none;
+    background: #1f7f5c;
+    float: left;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+#search_text:focus {
+    background: rgb(64, 151, 119);
+}
+#search_button {
+    border: 0 none;
+    background: #1f7f5c url(search.png) center no-repeat;
+    width: 10%;
+    float: left;
+    padding: 0;
+    text-align: center;
+    height: 52px;
+    cursor: pointer;
 }
