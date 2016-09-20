@@ -66,6 +66,13 @@ ul {
 	margin-right: 10%;
 }
 
+.testt {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 3%;
+}
+
 .searchBar {
 	width: 80%;
 	margin-top: 1%;
@@ -74,9 +81,11 @@ ul {
 }
 
 .topHeader {
-	width: 80%;
+	width: 50%;
 	margin-left: 10%;
-	margin-right: 10%;
+	display: table;
+	display: table-cell;
+	float: left;
 }
 
 .breadcrumb {
@@ -162,4 +171,76 @@ li a:hover:not(.active) {
     text-align: center;
     height: 52px;
     cursor: pointer;
+}
+
+/* jssor slider bullet navigator skin 01 css */
+/*
+.jssorb01 div           (normal)
+.jssorb01 div:hover     (normal mouseover)
+.jssorb01 .av           (active)
+.jssorb01 .av:hover     (active mouseover)
+.jssorb01 .dn           (mousedown)
+*/
+.jssorb01 {
+	position: absolute;
+}
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 12px;
+	height: 12px;
+	filter: alpha(opacity=70);
+	opacity: .7;
+	overflow: hidden;
+	cursor: pointer;
+	border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+/* jssor slider arrow navigator skin 02 css */
+/*
+.jssora02l                  (normal)
+.jssora02r                  (normal)
+.jssora02l:hover            (normal mouseover)
+.jssora02r:hover            (normal mouseover)
+.jssora02l.jssora02ldn      (mousedown)
+.jssora02r.jssora02rdn      (mousedown)
+*/
+.jssora02l, .jssora02r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	background: url('img/a02.png') no-repeat;
+	overflow: hidden;
+}
+.jssora02l { background-position: -3px -33px; }
+.jssora02r { background-position: -63px -33px; }
+.jssora02l:hover { background-position: -123px -33px; }
+.jssora02r:hover { background-position: -183px -33px; }
+.jssora02l.jssora02ldn { background-position: -3px -33px; }
+.jssora02r.jssora02rdn { background-position: -63px -33px; }
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 0%;
+	background-color: #F4F4F4;
+	text-align: center;
+}
+
+.wrapper {
+	min-height:100%;
+	position:relative;
 }
