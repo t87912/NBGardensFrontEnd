@@ -5,9 +5,32 @@
 		<title>NBGardens - Home</title>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon_stuff/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="javascript.js"></script>
+		<script src="http://swarm.simplecartjs.com/js/inject.js"></script>
+	
+    <!-- Your project file goes here -->  
+	<script>/*<![CDATA[*/
+	
+	if( QUnit.urlParams.lib && QUnit.urlParams.ver ){
+		document.write('<script src="https://ajax.googleapis.com/ajax/libs/'+ 
+					QUnit.urlParams.lib + '/' + 
+					QUnit.urlParams.ver + '/' + 
+					QUnit.urlParams.lib + '.js"><\/script>');
+	} else {
+		document.write('<script src="inc/jquery.1.6.1.min.js"><\/script>');
+	}
+	
+	if( QUnit.urlParams.commit ){
+		document.write('<script src="inc/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'/simpleCart.js"><\/script>');
+		document.write('<script src="inc/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'/test/test.core.js"><\/script>');
+	} else {
+		document.write('<script src="../simpleCart.js"><\/script>');
+		document.write('<script type="text/javascript" src="test.core.js"><\/script>');
+	}
+	/*]]>*/</script>
 	</head>
 
-	<body>
+	<body onload="generateProducts();">
 		<div class="wrapper">
 			<div class="topHeader">
 				<h1>NB Gardens Online Catalogue</h1>
@@ -38,7 +61,19 @@
 			
 			<div class="popularProducts">
 			<h2>Online Catalogue</h2>
+			<br>
 			</div>
+			
+			<a href="javascript:;" class="simpleCart_checkout">Test</a>
+			<a href="javascript:;" class="simpleCart_empty">1</a>
+			<div class="simpleCart_items">2</div>
+			<div class="simpleCart_total">3</div>
+			<div class="simpleCart_quantity">4</div>
+			
+			<!-- WHERE THE PRODUCTS ARE GENERATED -->
+			<!-- http://simplecartjs.org/documentation -->
+			<div class="products" id="prod"></div>
+			
 			<br><br><br>
 			<div class="footer">&copy; 2016 NBGardens</div>
 		</div>
