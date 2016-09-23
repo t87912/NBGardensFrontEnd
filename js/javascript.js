@@ -26,6 +26,8 @@ function generateProducts() {
 					 "<p>" + products[i][2] + "</p>" + 
 					 "<p>&pound;" + products[i][3] +"</p>" + 
 					 imgSrc +
+					 "<br>" +
+					 "<button type='button' class='addToCart' onclick='alert()'>Add to Cart</button>" +
 					 "</div>";
 					 
 		//testString = testString + products[i][0] + "....." + products[i][1] + "....." + products[i][2] + "....." + products[i][3] + "<br>";
